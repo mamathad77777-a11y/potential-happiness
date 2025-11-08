@@ -5,200 +5,199 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mamatha Dharavath — Full Stack Developer</title>
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="site">
-    <header>
+  <header class="site-header">
+    <div class="container header-inner">
       <div class="brand">
         <div class="logo">MD</div>
-        <div>
-          <div style="font-weight:800">Mamatha Dharavath</div>
-          <div style="font-size:12px;color:var(--muted)">Aspiring Full Stack Developer</div>
+        <div class="brand-text">
+          <div class="name">Mamatha Dharavath</div>
+          <div class="title">Aspiring Full Stack Developer</div>
         </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div>
-          <div class="card intro">
-            <h1>Hi — I'm <span style="color:var(--accent)">Mamatha Dharavath</span></h1>
-            <p class="lead">Computer Science graduate with hands-on experience in full stack web development, machine learning integration, and responsive UI design. I build user-friendly web apps and AI-powered solutions.</p>
-            <div class="cta">
-              <a class="btn" href="#projects">View Projects</a>
-              <a class="btn ghost" href="mailto:mamathadharavath1304@gmail.com">Email Me</a>
-            </div>
-            <div style="margin-top:16px;color:var(--muted);font-size:14px">
-              LinkedIn:
-              <a class="link" href="https://linkedin.com/in/mamathadharavath" target="_blank">
-                linkedin.com/in/mamathadharavath
-              </a>
-            </div>
+      <button id="navToggle" class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="reveal-up">Hi, I'm <span class="accent">Mamatha</span></h1>
+          <p class="lead reveal-up delay-1">
+            Computer Science graduate building user-friendly full-stack web apps and AI-integrated solutions.
+          </p>
+          <div class="actions reveal-up delay-2">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="mailto:mamathadharavath1304@gmail.com">Email Me</a>
           </div>
 
-          <section id="projects" class="section">
-            <h3>Selected Projects</h3>
-            <div class="projects">
-              <article class="project card">
-                <h4>Cyberbullying Detection on Social Media</h4>
-                <div class="meta">HTML, CSS, Python, Machine Learning, NLP</div>
-                <p class="muted-2">Developed a real-time web application that detects offensive and harmful content on social media using NLP techniques. Implemented preprocessing, model inference and a simple dashboard for results.</p>
-                <div style="margin-top:10px"><a class="link" href="#">View details (add repo/demo)</a></div>
-              </article>
-
-              <article class="project card">
-                <h4>AI-Powered Medical Chatbot</h4>
-                <div class="meta">HTML, CSS, Python, JavaScript</div>
-                <p class="muted-2">Designed and deployed an AI-based chatbot that predicts infectious diseases based on symptom input. Built conversational UI and integrated prediction logic on the backend.</p>
-                <div style="margin-top:10px"><a class="link" href="#">View details (add repo/demo)</a></div>
-              </article>
-            </div>
-          </section>
+          <ul class="quick-stats reveal-up delay-3">
+            <li><strong>Full Stack</strong><span>React · Node · MySQL</span></li>
+            <li><strong>ML/AI</strong><span>NLP · Chatbots</span></li>
+            <li><strong>Availability</strong><span>Open to opportunities</span></li>
+          </ul>
         </div>
 
-        <aside class="card profile">
-          <div class="avatar">MD</div>
-          <div style="font-weight:700">Mamatha Dharavath</div>
-          <div class="muted">Aspiring Full Stack Developer</div>
+        <aside class="hero-right card glass reveal-fade">
+          <div class="avatar-mark">MD</div>
+          <h3 class="small-title">Mamatha Dharavath</h3>
+          <p class="muted">Aspiring Full Stack Developer</p>
 
-          <div class="divider"></div>
-
-          <div class="contact-list">
-            <div class="muted">Email</div>
+          <div class="contact-block">
             <a class="link" href="mailto:mamathadharavath1304@gmail.com">mamathadharavath1304@gmail.com</a>
-
-            <div class="muted" style="margin-top:8px">Phone</div>
             <a class="link" href="tel:+919502491109">+91 95024 91109</a>
-
-            <div class="muted" style="margin-top:8px">Location</div>
-            <div class="muted-2">Hyderabad, Telangana, India</div>
+            <a class="link" target="_blank" href="https://linkedin.com/in/mamathadharavath">LinkedIn</a>
           </div>
 
           <div class="divider"></div>
 
-          <div style="width:100%;text-align:center">
-            <a class="btn" href="#contact">Get in touch</a>
-          </div>
+          <a class="btn block primary" href="#contact">Get in touch</a>
         </aside>
-      </section>
+      </div>
+    </section>
 
-      <section id="skills" class="section card">
-        <h3>Technical Skills</h3>
-        <div class="grid-3" style="margin-top:12px">
-          <div>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-inner card glass reveal-up">
+          <h2>About</h2>
+          <p class="muted">Motivated Computer Science graduate with strong foundations in full-stack development, databases and applied machine learning. I enjoy building web apps that solve real problems and learning new tech every week.</p>
+          <div class="skills-inline">
+            <span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-up">Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project card reveal-fade delay-1">
+            <div class="project-head">
+              <h3>Cyberbullying Detection on Social Media</h3>
+              <div class="meta">HTML · CSS · Python · NLP</div>
+            </div>
+            <p class="muted">Real-time web app that detects offensive content using NLP preprocessing and model inference. Includes a simple dashboard for flagged results.</p>
+            <div class="project-actions">
+              <a class="link" href="#">View repo</a>
+              <a class="link" href="#">Live demo</a>
+            </div>
+          </article>
+
+          <article class="project card reveal-fade delay-2">
+            <div class="project-head">
+              <h3>AI-Powered Medical Chatbot</h3>
+              <div class="meta">HTML · JS · Python</div>
+            </div>
+            <p class="muted">Chatbot that asks symptom-based questions and predicts possible infectious diseases using backend models. Built conversational UI and API integration.</p>
+            <div class="project-actions">
+              <a class="link" href="#">View repo</a>
+              <a class="link" href="#">Live demo</a>
+            </div>
+          </article>
+
+          <!-- add more project cards if needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-up">Skills</h2>
+        <div class="skills-grid reveal-up delay-1">
+          <div class="skill-card card glass">
             <h4>Languages & Frameworks</h4>
-            <div class="skills-list">
-              <span class="chip">HTML</span>
-              <span class="chip">CSS</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">React.js</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">Python</span>
-              <span class="chip">C++</span>
-              <span class="chip">Java</span>
-            </div>
+            <p class="muted">HTML · CSS · JavaScript · React · Node.js · Python · C++ · Java</p>
           </div>
-
-          <div>
+          <div class="skill-card card glass">
             <h4>Databases & Tools</h4>
-            <div class="skills-list">
-              <span class="chip">MySQL</span>
-              <span class="chip">Git</span>
-              <span class="chip">VS Code</span>
-              <span class="chip">REST APIs</span>
-              <span class="chip">Power BI</span>
-            </div>
+            <p class="muted">MySQL · Git · VS Code · REST APIs · Power BI</p>
           </div>
-
-          <div>
+          <div class="skill-card card glass">
             <h4>Core Competencies</h4>
-            <div class="skills-list">
-              <span class="chip">Full Stack Dev</span>
-              <span class="chip">Machine Learning</span>
-              <span class="chip">UI/UX Design</span>
-              <span class="chip">Responsive Design</span>
-            </div>
+            <p class="muted">Full Stack Development · ML Integration · UI/UX · Responsive Design</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="education" class="section card">
-        <h3>Education</h3>
-        <div>
-          <strong>B.Tech — Computer Science & Engineering</strong>
-          <div class="muted">Malla Reddy Institute of Engineering & Technology (MRIET), Hyderabad (JNTU) — CGPA: 7.80 — 2025</div>
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-up">Education & Certifications</h2>
+        <div class="edu-grid reveal-up delay-1">
+          <div class="card glass">
+            <h4>B.Tech — Computer Science & Engineering</h4>
+            <p class="muted">Malla Reddy Institute of Engineering & Technology (MRIET), Hyderabad (JNTU) — CGPA: 7.80 — 2025</p>
+          </div>
+          <div class="card glass">
+            <h4>Senior Secondary (Class XII) — CBSE</h4>
+            <p class="muted">Kendriya Vidyalaya, Hyderabad — 86% — 2020</p>
+          </div>
         </div>
 
-        <div style="margin-top:12px">
-          <strong>Senior Secondary (Class XII) — CBSE</strong>
-          <div class="muted">Kendriya Vidyalaya, Hyderabad — 86% — 2020</div>
+        <div class="certs reveal-up delay-2">
+          <h4>Certifications</h4>
+          <ul class="muted">
+            <li>React JS — Nxtwave</li>
+            <li>Node JS — Nxtwave</li>
+            <li>Build Your Own Dynamic Web Application — Nxtwave</li>
+            <li>Programming Foundation with Python — Nxtwave</li>
+            <!-- ... -->
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="certifications" class="section card">
-        <h3>Certifications</h3>
-        <ul class="muted">
-          <li>Build Your Own Static Website — Nxtwave</li>
-          <li>Build Your Own Responsive Website — Nxtwave</li>
-          <li>Introduction to Databases — Nxtwave</li>
-          <li>Programming Foundation with Python — Nxtwave</li>
-          <li>Build Your Own Dynamic Web Application — Nxtwave</li>
-          <li>JavaScript Essentials — Nxtwave</li>
-          <li>Responsive Web Design using Flexbox — Nxtwave</li>
-          <li>Node JS — Nxtwave</li>
-          <li>React JS — Nxtwave</li>
-        </ul>
-      </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-inner card glass reveal-fade">
+          <h2>Contact</h2>
+          <p class="muted">Interested in collaborating or hiring? Reach out by email or LinkedIn — I respond quickly.</p>
 
-      <section id="core" class="section card">
-        <h3>Core Skills & Languages</h3>
-        <p class="muted-2">Leadership & Team Collaboration · Project Management · Critical Thinking & Problem Solving · Effective Communication · Time Management</p>
-        <p class="muted">Languages: English · Hindi · Telugu (Full Professional Proficiency)</p>
-      </section>
-
-      <section id="contact" class="section card">
-        <h3>Contact</h3>
-        <p class="muted-2">Interested in collaborating or hiring? I'd love to hear from you. Send a message or connect on LinkedIn.</p>
-
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
-          <a class="btn" href="mailto:mamathadharavath1304@gmail.com">Email</a>
-          <a class="btn ghost" href="https://linkedin.com/in/mamathadharavath" target="_blank">LinkedIn</a>
-          <a class="btn ghost" href="tel:+919502491109">Call</a>
+          <form id="contactForm" class="contact-form" onsubmit="return handleForm(event)">
+            <input name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send Message</button>
+              <a class="btn ghost" href="mailto:mamathadharavath1304@gmail.com">Email Directly</a>
+            </div>
+            <p id="formStatus" class="muted" aria-live="polite"></p>
+          </form>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <div style="margin-top:12px;color:var(--muted)">Tip: Replace the placeholders under each project with GitHub links or live demo URLs to let recruiters run your apps.</div>
-      </section>
-    </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner muted">© 2025 Mamatha Dharavath — Built with ❤️</div>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="muted">© 2025 Mamatha Dharavath — Built with ❤️ • <a class="link" href="#">Download Resume</a></div>
-    </footer>
-  </div>
-
-  <script>
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        const href=a.getAttribute('href');
-        if(href.length>1){
-          e.preventDefault();
-          document.querySelector(href).scrollIntoView({behavior:'smooth',block:'start'});
-        }
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
